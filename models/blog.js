@@ -8,7 +8,7 @@ const BlogSchema = new mongoose.Schema({
     description: {
         type: String,
     },
-    eventDate: {
+    postDate: {
         type: Date,
     },
     photos: {
@@ -19,7 +19,7 @@ const BlogSchema = new mongoose.Schema({
     },
     userId: {
         type: mongoose.ObjectId
-    },
+    }
 });
 
 const Blog = mongoose.model('Blog', BlogSchema);
